@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/core.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="randnum.js"></script>
+  <script src="egg.js"></script>
+  <script src="nodes.js"></script>
+  <script src="renderchat.js"></script>
+  <script src="send.js"></script>
+  <script src="login.js"></script>
+
+  <div class="logo" id="logo-div" onmousemove="offset(event);" onmouseleave="reset();">
+    <img src="EGG_MODE.png">
+  </div>
+  <div class="button" id="test">Sign In</div>
+  <div class="button" id="kill-tab">Destruct Tab!</div>
+  <div id="chat">
+    <div id="people"></div>
+    
+    <div id="msgs"></div>
+    <div id="send" onclick="sendFUNC();">Send</div>
+    <input type="text" id="msg" placeholder="Type a message...">
+  </div>
+  <div id="login">
+    
+  </div>
+</body>
+
+</html>
