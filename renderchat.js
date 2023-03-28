@@ -4,7 +4,7 @@ let accs = {}
 
 console.log(CryptoJS.MD5('Test').toString())
 
-fetch('http://47.14.121.152:322/accs',{method:"GET"}).then(function(response) {
+fetch('https://47.14.121.152:322/accs',{method:"GET"}).then(function(response) {
   return response.json();
 }).then(function(data) {
   accs = data;
@@ -15,7 +15,7 @@ fetch('http://47.14.121.152:322/accs',{method:"GET"}).then(function(response) {
 setInterval(function(){
 
 
-fetch('http://47.14.121.152:322/msgs',{method:"GET"}).then(function(response) {
+fetch('https://47.14.121.152:322/msgs',{method:"GET"}).then(function(response) {
   return response.json();
 }).then(function(data) {
   console.log(data)
