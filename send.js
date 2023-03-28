@@ -9,7 +9,7 @@ function sendFUNC(){
     dat['dat'] = content;
     dat['date'] = date;
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", 'http://47.14.121.152:322/msg', true);
+    xhr.open("POST", 'https://47.14.121.152:322/msg', true);
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.send(JSON.stringify(dat));
     text.value = '';
